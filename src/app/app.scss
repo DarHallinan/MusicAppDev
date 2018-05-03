@@ -1,16 +1,79 @@
-// http://ionicframework.com/docs/theming/
+.page-home{
+    background-color: color($colors, light);
+    color: color($colors, custGrey); // text color
 
+    font-size: 25pt;
+	font-weight: 200;
+	line-height: 1.65;
+   
+    h1, h2, h3, h4, h5, h6 {
+		font-weight: 400;
+		line-height: 1.5;
+		margin: 0 0 1em 0;
+		text-transform: uppercase;
+		letter-spacing: 0.375rem;
+        text-align: center;
+	}
+	ion-grid {
+		height: 100%;
+	}
+	.picture_preview {
+		height: 60%;
+	}
+	.button_col {
+		height: 40%;
+	}
+	ion-col {
+		height: 100%;
+	}
+	.center {
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
 
-// App Global Sass
-// --------------------------------------------------
-// Put style rules here that you want to apply globally. These
-// styles are for the entire app and not just one component.
-// Additionally, this file can be also used as an entry point
-// to import other Sass files to be included in the output CSS.
-//
-// Shared Sass variables, which can be used to adjust Ionic's
-// default Sass variables, belong in "theme/variables.scss".
-//
-// To declare rules for a specific mode, create a child rule
-// for the .md, .ios, or .wp mode classes. The mode class is
-// automatically applied to the <body> element in the app.
+	ion-img {
+		object-fit: resize;
+		width: auto !important;
+		border: 0;
+		padding: 0;
+		background-color: grey;
+	}
+	
+}
+
+    html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, img {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+
+    footer, header,  menu, nav {
+		display: block;
+	}
+
+.toolbar-title{
+    text-align: center;
+}
+
+.toolbar-background{
+    border: none;
+}
+
+.img{
+	max-width: none;
+}
+
+.center {
+   width: 300px;
+   height: 300px;
+   position: absolute;
+   left: 50%;
+   top: 50%; 
+   margin-left: -150px;
+   margin-top: -150px;
+}
+

@@ -1,0 +1,18 @@
+{
+  "Albums": [
+  {
+    "cover": "https://bit.ly/2I5I5pM",
+    "album": "Live and Dangerous",
+    "band": "Thin Lizzy",
+    "year": "1978",
+    "link": "https://bit.ly/2joYp7c"
+  },  
+  {
+    "cover":"https://bit.ly/2Ksnf22",
+    "album": "Brothers in Arms",
+    "band": "Dire Straits",
+    "year": "1985",
+    "link": "https://bit.ly/2joHkdh"
+  }
+  ]
+}
