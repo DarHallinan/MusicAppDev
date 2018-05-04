@@ -3,7 +3,7 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Rock & Roll</ion-title>
+    <ion-title>Rock &amp; Roll</ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -12,18 +12,26 @@
   <ion-grid>
     <ion-row>
       <ion-col col-12>
-        <ion-img  src="assets/imgs/rock-header.jpg"></ion-img>
+        <ion-img src="assets/imgs/rock-header.jpg"></ion-img>
       </ion-col>
     </ion-row>
+    <ion-row>
+      <ion-col col-12>
       <h2>Albums</h2>
-    <ion-list>
-      <ion-item *ngFor="let album of albums">
-        <ion-img width="200" height="200" src="{{album.cover}}"></ion-img>
-        <p>{{album.name}}</p>
-        <p>{{album.band}}</p>
-        <p>{{album.year}}</p>
-        <p>{{album.link}}</p>
-      </ion-item>
-    </ion-list>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-12>
+        <ion-list>
+          <ion-item *ngFor="let album of albums">
+            <ion-img width="250" height="250" src="{{album.cover}}"></ion-img>
+            <b>{{album.name}}</b>
+            <p>By: {{album.band}}</p>
+            <p>Relased: {{album.year}}</p>
+            <p>Purchase: {{album.link}}</p>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
   </ion-grid>
 </ion-content>

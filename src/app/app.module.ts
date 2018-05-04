@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
+import { StatusBar } from '@ionic-native/status-bar';
+import { SplashScreen } from '@ionic-native/splash-screen';
 import { HttpClientModule } from '@angular/common/http';
 
 import { MyApp } from './app.component';
@@ -9,10 +11,9 @@ import { ListPage } from '../pages/list/list';
 import { RockPage } from '../pages/rock/rock';
 import { MetalPage } from '../pages/metal/metal';
 import { HiphopPage } from '../pages/hiphop/hiphop';
-
-import { StatusBar } from '@ionic-native/status-bar';
-import { SplashScreen } from '@ionic-native/splash-screen';
+import { AboutPage } from '../pages/about/about';
 import { AlbumsProvider } from '../providers/albums/albums';
+
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { AlbumsProvider } from '../providers/albums/albums';
     ListPage,
     RockPage,
     MetalPage,
-    HiphopPage
+    HiphopPage,
+    AboutPage
   ],
   imports: [
     BrowserModule,
@@ -35,7 +37,8 @@ import { AlbumsProvider } from '../providers/albums/albums';
     ListPage,
     RockPage,
     MetalPage,
-    HiphopPage
+    HiphopPage,
+    AboutPage
   ],
   providers: [
     StatusBar,

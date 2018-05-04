@@ -8,6 +8,30 @@
 </ion-header>
 
 
-<ion-content padding>
-
+<ion-content padding class="page-home">
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12>
+        <ion-img src="assets/imgs/metal-header.jpg"></ion-img>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-12>
+      <h2>Albums</h2>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-12>
+        <ion-list>
+          <ion-item *ngFor="let album of albums">
+            <ion-img src="{{album.cover}}"></ion-img>
+            <p>{{album.name}}</p>
+            <p>{{album.band}}</p>
+            <p>{{album.year}}</p>
+            <p>{{album.link}}</p>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

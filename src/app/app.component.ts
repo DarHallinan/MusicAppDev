@@ -8,6 +8,7 @@ import { ListPage } from '../pages/list/list';
 import { RockPage } from '../pages/rock/rock';
 import { MetalPage } from '../pages/metal/metal';
 import { HiphopPage } from '../pages/hiphop/hiphop';
+import { AboutPage } from '../pages/about/about';
 
 @Component({
   templateUrl: 'app.html'
@@ -26,7 +27,8 @@ export class MyApp {
       { title: 'Home', component: HomePage },
       { title: 'Rock and Roll', component: RockPage },
       { title: 'Metal', component: MetalPage },
-      { title: 'Hip Hop', component: HiphopPage }
+      { title: 'Hip Hop', component: HiphopPage },
+      { title: 'App Info', component: AboutPage }
     ];
 
   }
