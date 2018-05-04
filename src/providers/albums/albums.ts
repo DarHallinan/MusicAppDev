@@ -13,7 +13,8 @@ export class AlbumsProvider {
   }
 
   GetAlbumData():Observable<any>{ // link to my custom API
-    return this.http.get('https://jsonblob.com/c13cf126-4f98-11e8-9df1-8364f36f43b7');
+    return this.http.get('https://jsonblob.com/api/jsonblob/c13cf126-4f98-11e8-9df1-8364f36f43b7');
+  
   }
 
 }

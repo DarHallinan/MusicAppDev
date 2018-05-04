@@ -24,11 +24,11 @@
       <ion-col col-12>
         <ion-list>
           <ion-item *ngFor="let album of albums">
-            <ion-img src="{{album.cover}}"></ion-img>
-            <p>{{album.name}}</p>
-            <p>{{album.band}}</p>
-            <p>{{album.year}}</p>
-            <p>{{album.link}}</p>
+            <ion-img width="250" height="250" src="{{album.cover}}"></ion-img>
+            <b>{{album.name}}</b>
+            <p>By: {{album.band}}</p>
+            <p>Relased: {{album.year}}</p>
+            <p>Purchase: <a>{{album.link}}</a></p>
           </ion-item>
         </ion-list>
       </ion-col>

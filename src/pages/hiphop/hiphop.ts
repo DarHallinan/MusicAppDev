@@ -7,7 +7,7 @@ import { AlbumsProvider } from '../../providers/albums/albums';
   templateUrl: 'hiphop.html',
 })
 export class HiphopPage {
-  albums:any[]=[];
+  albums:any[];
   constructor(public navCtrl: NavController, private ap:AlbumsProvider) {
   }
 

@@ -7,7 +7,7 @@ import { AlbumsProvider } from '../../providers/albums/albums';
   templateUrl: 'metal.html',
 })
 export class MetalPage {
-  albums:any[]=[];
+  albums:any[];
   constructor(public navCtrl: NavController, private ap:AlbumsProvider) {
   }
 

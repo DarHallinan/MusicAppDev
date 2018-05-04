@@ -7,7 +7,7 @@ import { AlbumsProvider } from '../../providers/albums/albums';
   templateUrl: 'rock.html',
 })
 export class RockPage {
-  albums:any[]=[];
+  albums:any[];
   constructor(public navCtrl: NavController, private ap:AlbumsProvider) {
   }
 
